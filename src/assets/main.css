@@ -1,0 +1,29 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer{
+  body {
+    margin: 0;
+    font-family:'cairo';
+    color: white;
+    background: #f3f4f6;
+    overflow-x: hidden;
+
+  }
+  section {
+        /* position: relative; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* min-height: 200px; */
+        /* padding-top: 100px; */
+      }
+
+     
+    /* #__vue-devtools-container__{
+        display: none;
+      } */
+}

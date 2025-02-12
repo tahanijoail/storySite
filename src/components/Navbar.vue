@@ -87,7 +87,7 @@ const isActiveLink = (routePath)=>{
                 class='  text-black text-xl font-semibold hover:text-[#FFB74D]'>اضافة قصة</RouterLink>
             </li>
             <li class='
-             max-lg:py-4 px-4 '><RouterLink to='#'
+             max-lg:py-4 px-4 '><RouterLink to='/allWritters'
               class=' text-black text-xl font-semibold hover:text-[#FFB74D]'>الكتاب</RouterLink>
             </li>
             <li class='

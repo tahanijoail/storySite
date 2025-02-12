@@ -91,9 +91,5 @@ onMounted(async()=>{
     </div>
 </template>
 <style scoped>
-.bgPattern{
-    background-image: url('/images/Vector.png');
-    background-repeat: repeat;
-z-index: 10;
-}
+
 </style>

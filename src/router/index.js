@@ -9,6 +9,8 @@ import StoryView from '../views/StoryView.vue'
 import ListeningStory from '@/views/ListeningStory.vue'
 import AboutSite from '@/views/AboutSite.vue'
 import AddNewStory from '@/views/AddNewStory.vue'
+import AllWritters from '@/views/AllWritters.vue'
+import Writter from '@/views/Writter.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,6 +65,16 @@ const router = createRouter({
       path: '/listining_story',
       name: 'listining_story',
       component: ListeningStory,
+    },
+    {
+      path: '/writter',
+      name: 'writter',
+      component: Writter,
+    },
+    {
+      path: '/allWritters',
+      name: 'allWritters',
+      component: AllWritters,
     },
 
     // {

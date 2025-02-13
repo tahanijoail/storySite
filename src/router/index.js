@@ -11,6 +11,12 @@ import AboutSite from '@/views/AboutSite.vue'
 import AddNewStory from '@/views/AddNewStory.vue'
 import AllWritters from '@/views/AllWritters.vue'
 import Writter from '@/views/Writter.vue'
+import LoginForm from '@/views/LoginForm.vue'
+import CreateAccount from '@/views/CreateAccountAsWritter.vue'
+import CreateAccountAsWritter from '@/views/CreateAccountAsWritter.vue'
+import CreateAccountAsReader from '@/views/CreateAccountAsReader.vue'
+import UpdatePassword from '@/views/UpdatePassword.vue'
+import UpdatePasswordUser from '@/views/UpdatePasswordUser.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +25,36 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+     
+    },
+    {
+      path: '/loginForm',
+      name: 'loginForm',
+      component: LoginForm,
+     
+    },
+    {
+      path: '/createAccountAsWritter',
+      name: 'createAccountAsWritter',
+      component: CreateAccountAsWritter,
+     
+    },
+    {
+      path: '/updatePassword',
+      name: 'updatePassword',
+      component: UpdatePassword,
+     
+    },
+    {
+      path: '/updatePasswordUser',
+      name: 'updatePasswordUser',
+      component: UpdatePasswordUser,
+     
+    },
+    {
+      path: '/createAccountAsReader',
+      name: 'createAccountAsReader',
+      component: CreateAccountAsReader,
      
     },
     {

@@ -33,7 +33,9 @@ onUnmounted(() => {
 text-size="text-xl"
 class="hover:bg-purple-700 focus:outline-none"
 >
-انشاء حساب 
+<RouterLink to="loginForm">
+  انشاء حساب 
+</RouterLink>
 </FancyButtons>
 
 <div
@@ -42,11 +44,11 @@ class="absolute  w-52 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
 >
 <ul class="py-1">
 <li>
-<RouterLink to="#" class="block px-4 py-2 text-gray-600 text-base font-semibold  hover:bg-purple-500 hover:text-white rounded-lg">
+<RouterLink to="/createAccountAsWritter" class="block px-4 py-2 text-gray-600 text-base font-semibold  hover:bg-purple-500 hover:text-white rounded-lg">
 التسجيل ككاتب</RouterLink>
 </li>
 <li>
-<RouterLink to="#" class="block px-4 py-2 text-gray-600 text-base font-semibold pb-4 hover:bg-purple-500 hover:text-white rounded-lg">
+<RouterLink to="/createAccountAsReader" class="block px-4 py-2 text-gray-600 text-base font-semibold pb-4 hover:bg-purple-500 hover:text-white rounded-lg">
  التسجيل كقارئ
 </RouterLink>
 </li>
@@ -55,7 +57,7 @@ class="absolute  w-52 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
 </div>
 
 
-<RouterLink to="#" class="border border-gray-400 text-gray-600 px-4 py-2 rounded-lg text-xl font-bold hover:bg-purple-500 hover:text-white">تسجيل الدخول</RouterLink>
+<RouterLink to="/loginForm" class="border border-gray-400 text-gray-600 px-4 py-2 rounded-lg text-xl font-bold hover:bg-purple-500 hover:text-white">تسجيل الدخول</RouterLink>
 <button id="toggleOpen" class='lg:hidden'>
  <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
    <path fill-rule="evenodd"

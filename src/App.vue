@@ -12,7 +12,7 @@ import Footering from './components/Footering.vue';
 <RouterView/>
  <!-- <Writter/> -->
   <!-- <AddNewStory/> -->
-<Footering/>
+<!-- <Footering/> -->
  <!-- <StoryView/> -->
 </template>
 <style scoped>

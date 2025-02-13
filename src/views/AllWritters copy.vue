@@ -18,13 +18,17 @@
       <div class="overflow-hidden">
         <div
           ref="slider"
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 transition-transform duration-500 ease-in-out"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  duration-500 ease-in-out"
           :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
         >
+        <div
+        class="flex transition-transform shadow-xl duration-500"
+        :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
+      >
           <div
             v-for="(author, index) in authors"
             :key="index"
-            class="bg-white h-[430px] p-10 rounded-xl shadow-md text-center"
+            class="bg-white h-[430px] p-10 rounded-xl shadow-md text-center "
           >
             <img :src="author.image" alt="author" class="w-36 h-3w-36 mx-auto rounded-full" />
             <h2 class="mt-4 text-xl text-gray-800 font-semibold">{{ author.name }}</h2>
@@ -35,6 +39,7 @@
               </span>
             </div>
             <button class="mt-4 px-4 py-2 w-full bg-[#FFB74D] text-gray-800 rounded-lg"><RouterLink to="/writter">تعرف على الكاتب</RouterLink></button>
+          </div>
           </div>
         </div>
       </div>
@@ -62,9 +67,13 @@
     data() {
       return {
         currentIndex: 0,
-        visibleCards:3,
         authors: [
-          
+          {
+            name: "محمد القاضي",
+            description: "خالد الشامي كاتب قصص أطفال مبدع، يتميز بأسلوبه المشوق والبسيط الذي يجذب الأطفال وينمي خيالهم",
+            image: "/images/Ellipse 7.png",
+            rating: 4,
+          },
           {
             name: "محمد القاضي",
             description: "خالد الشامي كاتب قصص أطفال مبدع، يتميز بأسلوبه المشوق والبسيط الذي يجذب الأطفال وينمي خيالهم",

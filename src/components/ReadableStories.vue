@@ -4,6 +4,7 @@ import axios from 'axios'
 import SingleStory from './SingleStory.vue';
 import { reactive, defineProps,onMounted} from 'vue';
 import FancyButtons from './FancyButtons.vue';
+import { RouterLink } from 'vue-router';
 
 // const stories=[
 // {
@@ -75,7 +76,7 @@ onMounted(async()=>{
        
 <div class="w-[72%]  mx-auto ">
     <div class="flex flex-col md:flex-row justify-center items-center md:gap-44  pt-5 ">
-        <FancyButtons bg="bg-[#FFB74D]" text-size="text-base" textSize="text-lg" text-color="text-purple-500" py="py-2" class="text-center  overflow-hidden md:w-[21%] md:-mr-[23rem]  ">قصصك   المفضلة ❤️ </FancyButtons>
+        <RouterLink  to="/FavoritetoriesS" class="py-2 bg-[#FFB74D] text-lg text-purple-500 text-center  overflow-hidden md:w-[21%] md:-mr-[23rem]  ">قصصك   المفضلة ❤️ </RouterLink>
         <h1 class=" text-center text-4xl font-bold text-[#FFB74D] py-14  ">القصص الأكثر قراءة</h1>
    
 </div>

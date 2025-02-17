@@ -10,13 +10,16 @@ import ListeningStory from '@/views/ListeningStory.vue'
 import AboutSite from '@/views/AboutSite.vue'
 import AddNewStory from '@/views/AddNewStory.vue'
 import AllWritters from '@/views/AllWritters.vue'
-import Writter from '@/views/Writter.vue'
+import Writter from '@/views/WritterforReaer.vue'
 import LoginForm from '@/views/LoginForm.vue'
 import CreateAccount from '@/views/CreateAccountAsWritter.vue'
 import CreateAccountAsWritter from '@/views/CreateAccountAsWritter.vue'
 import CreateAccountAsReader from '@/views/CreateAccountAsReader.vue'
 import UpdatePassword from '@/views/UpdatePassword.vue'
 import UpdatePasswordUser from '@/views/UpdatePasswordUser.vue'
+import FavoriteStories from '@/views/FavoriteStories.vue'
+import ReviewStory from '@/components/ReviewStory.vue'
+import WritterforReaer from '@/views/WritterforReaer.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -68,6 +71,16 @@ const router = createRouter({
       component: AboutSite,
     },
     {
+      path: '/review/:id',
+      name: 'review',
+      component: ReviewStory,
+    },
+    {
+      path: '/review/edite/:id',
+      name: 'edit-review',
+      component: ReviewStory,
+    },
+    {
       path: '/stories/:id',
       name: 'story',
       component: StoryView,
@@ -108,9 +121,19 @@ const router = createRouter({
       component: Writter,
     },
     {
+      path: '/writterforReader',
+      name: 'writterforReader',
+      component: WritterforReaer,
+    },
+    {
       path: '/allWritters',
       name: 'allWritters',
       component: AllWritters,
+    },
+    {
+      path: '/FavoritetoriesS',
+      name: 'FavoritetoriesS',
+      component: FavoriteStories,
     },
 
     // {

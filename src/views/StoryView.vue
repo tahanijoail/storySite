@@ -65,7 +65,7 @@ const state =reactive({
 </div>
     </section>
     <div class=" text-gray-700 mx-auto max-w-6xl p-6 rounded-xl text-right leading-relaxed ">
-      <p class="font-bold leading-10">{{ state.story.story }}   </p>
+      <p class="font-bold leading-10">{{ state.story.content }}   </p>
     </div>
     </div>
 <div v-else class="text-center text-gray-500 py-6"><PulseLoader/></div>

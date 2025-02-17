@@ -37,8 +37,7 @@ onUnmounted(() => {
       try {
         const response =await axios.post('http://localhost:9000/stories',newStory);
         toast.success('Job Added Succesfully');
-        // router.push(`/stories/${response.data.id}`)
-        router.push(`/`)
+        router.push(`/stories/${response.data.id}`)
         console.log('added')
       } catch (error) {
         console.error("Error...",error);
@@ -55,26 +54,8 @@ onUnmounted(() => {
         this.story[type] = file;
         console.error("errprprppr");
       })
-    const  previewStory=(async ()=> {
-      const newStory={
-        title:story.title,
-        content:story.content,
-        category:story.category,
-        cover:story.cover,
-        audio:story.audio
-      };
-      try {
-        const response =await axios.post('http://localhost:9000/stories',newStory);
-        toast.success('Job Added Succesfully');
-        // router.push(`/stories/${response.data.id}`)
-        router.push(`/review/${response.data.id}`)
-        console.log('added')
-      } catch (error) {
-        console.error("Error...",error);
-        toast.error('Story Not Added');
-
-      }
-     
+    const  previewStory=(()=> {
+        alert("معاينة القصة:");
         // console.log(this.story);
       })
      const submitStory=(()=> {
@@ -220,7 +201,6 @@ onUnmounted(() => {
                 </button>
                 <button
                 type="submit"
-                @click="submitStory"
                 class="w-64 text-xl bg-sky-500 hover:bg-sky-400  text-white px-4 py-2 rounded-md"
                 >
                 إرسال القصة

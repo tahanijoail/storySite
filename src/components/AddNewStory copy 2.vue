@@ -71,7 +71,7 @@ onUnmounted(() => {
     </div>
         <div class="text-center pt-[210px] px-4">
         <h2 class="text-gray-800 text-3xl font-bold text-right mr-[11rem] ">إضافة قصة جديدة</h2>
-        <div class="flex justify-center items-center mt-4 min-h-screen ">
+        <div class="flex justify-center items-center mt-4 min-h-screen">
             
         <div class="w-full max-w-6xl bg-purple-500 text-right text-[#FFB74D] shadow-lg rounded-2xl p-6">
             <form @submit.prevent="submitStory" class="mx-auto ">    

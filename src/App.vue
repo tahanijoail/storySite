@@ -2,20 +2,14 @@
 import { RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
 import Footering from './components/Footering.vue';
-// import AddNewStory from './views/AddNewStory.vue';
-
-
+import WritterforReaer from './views/WritterforReaer.vue';
 
 </script>
 <template>
    <Navbar/>
-<RouterView/>
- <!-- <Writter/> -->
-  <!-- <AddNewStory/> -->
-<!-- <Footering/> -->
- <!-- <StoryView/> -->
+<!-- <RouterView/> -->
+ <WritterforReaer/>
+<Footering/>
 </template>
 <style scoped>
-
-
 </style>

@@ -1,4 +1,5 @@
 <script setup>
+import Footering from '@/components/Footering.vue';
 import Hero from '@/components/Hero.vue';
 import Navbar from '@/components/Navbar.vue';
 import ReadableStories from '@/components/ReadableStories.vue';
@@ -13,6 +14,7 @@ import Searching from '@/components/Searching.vue';
   <Hero/>
 </main>
 <ReadableStories/>
+<Footering/>
 </template>
 <style scoped>
 

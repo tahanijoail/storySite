@@ -23,7 +23,7 @@ onUnmounted(() => {
 });
 </script>
 <template>
-      <div class='flex max-lg:ml-auto gap-5 space-x-4 text-sm'>
+      <div class='flex max-lg:ml-auto gap-5 space-x-4 text-sm relative z-40' >
 
            
           

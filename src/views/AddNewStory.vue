@@ -158,13 +158,16 @@ onUnmounted(() => {
                 <option value="مغامرات" class="flex items-center gap-2 text-gray-800 rounded-xl hover:bg-purple-600 dropdowntoggleE  "> 
               مغامرات
     </option>
-                <option value=" خيال علمي"  class="hover:bg-gray-200 ">خيال علمي
-                    <i class="pi pi-chevron-down text-black"></i></option>
+                <option value=" خيال علمي"  class="hover:bg-gray-200 ">خيال علمي</option>
                 <option value="تعليمي"  class="hover:bg-gray-200 ">تعليمي</option>
                 <option value="حيوانات"  class="hover:bg-gray-200 ">حيوانات</option>
                 </select>
                 <!-- <span v-if="errors.category" class="text-sm text-red">{{ errors.category }}</span> -->
             </div>
+
+            <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+            <!-- ------------------------------ -->
             <!-- Cover Image -->
             <div class="mb-12 pr-28 ">
                 <label for="cover" class="block mb-3 text-xl font-bold">أضف غلاف القصة</label>

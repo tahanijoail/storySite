@@ -10,7 +10,7 @@ import ListeningStory from '@/views/ListeningStory.vue'
 import AboutSite from '@/views/AboutSite.vue'
 import AddNewStory from '@/views/AddNewStory.vue'
 import AllWritters from '@/views/AllWritters.vue'
-import Writter from '@/views/WritterforReaer.vue'
+import Writter from '@/views/ProfileWritter.vue'
 import LoginForm from '@/views/LoginForm.vue'
 import CreateAccount from '@/views/CreateAccountAsWritter.vue'
 import CreateAccountAsWritter from '@/views/CreateAccountAsWritter.vue'
@@ -19,7 +19,9 @@ import UpdatePassword from '@/views/UpdatePassword.vue'
 import UpdatePasswordUser from '@/views/UpdatePasswordUser.vue'
 import FavoriteStories from '@/views/FavoriteStories.vue'
 import ReviewStory from '@/components/ReviewStory.vue'
-import WritterforReaer from '@/views/WritterforReaer.vue'
+import WritterforReaer from '@/views/ProfileWritter.vue'
+import EditeProfileWritter from '@/views/EditeProfileWritter.vue'
+import ProfileWritter from '@/views/ProfileWritter.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,37 +30,37 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-     
+
     },
     {
       path: '/loginForm',
       name: 'loginForm',
       component: LoginForm,
-     
+
     },
     {
       path: '/createAccountAsWritter',
       name: 'createAccountAsWritter',
       component: CreateAccountAsWritter,
-     
+
     },
     {
       path: '/updatePassword',
       name: 'updatePassword',
       component: UpdatePassword,
-     
+
     },
     {
       path: '/updatePasswordUser',
       name: 'updatePasswordUser',
       component: UpdatePasswordUser,
-     
+
     },
     {
       path: '/createAccountAsReader',
       name: 'createAccountAsReader',
       component: CreateAccountAsReader,
-     
+
     },
     {
       path: '/browesStories',
@@ -76,9 +78,10 @@ const router = createRouter({
       component: ReviewStory,
     },
     {
-      path: '/review/edite/:id',
-      name: 'edit-review',
-      component: ReviewStory,
+      // path: '/review/edite/:id',
+      path: '/editeProfileWritter',
+      name: 'editeProfileWritter',
+      component: EditeProfileWritter,
     },
     {
       path: '/stories/:id',
@@ -121,9 +124,9 @@ const router = createRouter({
       component: Writter,
     },
     {
-      path: '/writterforReader',
-      name: 'writterforReader',
-      component: WritterforReaer,
+      path: '/profileWritter',
+      name: 'profileWritter',
+      component: ProfileWritter,
     },
     {
       path: '/allWritters',

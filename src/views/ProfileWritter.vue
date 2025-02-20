@@ -10,7 +10,7 @@
         <img src="/images/Ellipse 3.png" class="w-72 h-w-72 rounded-full border-4 border-gray-500 mx-auto -mt-52" /> 
 <form action="">
   <input type="file" class="hidden">
-  <i class="pi pi-camera absolute cursor-pointer -translate-x-[860px] -translate-y-24 text-2xl p-1 w-10 h-10 text-center  text-white bg-gray-700 rounded-full"></i>
+  <i class="pi pi-camera absolute cursor-pointer -translate-x-[830px] -translate-y-12 text-lg p-1 w-8 h-8 text-center  text-white bg-gray-700 rounded-full"></i>
 
 </form>      </div>
       <div class="text-center mx-auto w-3/4">
@@ -32,8 +32,8 @@
                 >
                 اضافة قصة جديدة
                 </RouterLink>
-                <RouterLink to="`/review/edite`"
-               
+                <RouterLink
+                to="/editeProfileWritter"
                 class="w-64 text-xl bg-[#FFB74D]   text-white px-4 py-2 rounded-md"
                 >
                 تعديل الملف الشخصي

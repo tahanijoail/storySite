@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router';
 <template>
  <!-- Go Back -->
     <section>
-      <div class="container m-auto pl-36 flex items-center">
+      <div class="relative container m-auto pl-36 flex items-center z-20">
         <RouterLink
           to="/"
           class="text-black text-xl font-semibold "

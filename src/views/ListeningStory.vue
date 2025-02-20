@@ -1,4 +1,5 @@
 <script>
+import { reactive } from 'vue';
 import { useRoute } from 'vue-router';
 
 
@@ -9,8 +10,14 @@ import { useRoute } from 'vue-router';
         isPlaying: false,
         duration: 0,
         currentTime: 0,
-         route:useRoute(),
-          storyaudio : route.params.audio
+        //  route:useRoute(),
+        //  storyId : route.params.id,
+          // storyaudio : this.route.params.audio,
+          // state:reactive(()=>{
+          //   story={},
+          //   isloading=true;
+          // })
+          
       };
     },
     mounted() {
@@ -18,10 +25,12 @@ import { useRoute } from 'vue-router';
         this.duration = this.$refs.audio.duration;
       });
     },
+
     async mounted(){
-     
+      console.log(this.storyaudio+"kkkkkkkkkkkkkkkk")
         try {
-    const response = await axios.get(`http://localhost:9000/stories/${storyaudio}`);
+         
+    const response = await axios.get(`http://localhost:9000/stories/${this.storyId}`);
     state.story=response.data;
     console.log(state.story)
   } catch (error) {

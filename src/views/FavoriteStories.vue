@@ -5,6 +5,7 @@ import { reactive, defineProps,onMounted} from 'vue';
 import SingleStory from '../components/SingleStory.vue';
 import { useRoute, useRouter } from 'vue-router';
 import Footering from '@/components/Footering.vue';
+import Searching from '@/components/Searching.vue';
 
 // to arrive to all object inside json file
 const route = useRoute();
@@ -45,7 +46,8 @@ if(confirm){
 </script>
 
 <template>
-    <div class="bgPattern  bg-purple-500 mt-44 pb-32 h-full ">
+   <Searching/>
+    <div class="bgPattern  bg-purple-500 mt-20 pb-32 h-full ">
 <div class="w-[72%] mx-auto pt-24 ">
    
         <h1 class=" text-right text-4xl font-bold text-[#FFB74D] py-14  "> قصصك المفضلة </h1>

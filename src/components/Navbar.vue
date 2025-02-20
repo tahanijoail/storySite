@@ -1,9 +1,12 @@
 <script setup>
-import { RouterLink, useRoute } from 'vue-router';
+import { RouterLink, useRoute, useRouter } from 'vue-router';
 import FancyButtons from './FancyButtons.vue';
 
 import { ref, onMounted, onUnmounted } from 'vue';
 import Register_Sign from './Register_Sign.vue';
+import WritterforReaer from '@/views/ProfileWritter.vue';
+import StatuseUser from './StatuseUser.vue';
+import BackButton from './BackButton.vue';
 
 const isOpen = ref(false);
 
@@ -44,14 +47,16 @@ toggleClose.addEventListener('click', handleClick);
 // this functin for make hover when i click on the href on the navbar
 const route=useRoute();
 const isActiveLink = (routePath)=>{
-  
+  console.log("hjdhjshdjhdjhjsd"+route.name)
   return route.path===routePath;
 }
+const router=useRouter()
+
 </script>
 
 <template>
-  <header class='flex px-4 sm:px-16 font-[sans-serif]  '>
-      <div class='flex flex-wrap items-center justify-between gap-5 w-full'>
+  <header class='flex  font-[sans-serif] w-full '>
+      <div class='flex flex-wrap items-center justify-between gap-5 w-full shadow-md px-16 mb-7'>
         <RouterLink to="#" class=""><img src="/src/assets/اسم وشعار الموقع.png" alt="شعار" class=' w-40 ' /></RouterLink>
 
         <div id="collapseMenu"
@@ -82,10 +87,7 @@ const isActiveLink = (routePath)=>{
              max-lg:py-4 px-4'><RouterLink to='/three_five'
                 class='  text-black text-xl font-semibold hover:text-[#FFB74D]'>تصفح القصص</RouterLink>
             </li>
-            <li class='
-             max-lg:py-4 px-4'><RouterLink to='/stories/addNewStory'
-                class='  text-black text-xl font-semibold hover:text-[#FFB74D]'>اضافة قصة</RouterLink>
-            </li>
+           
             <li class='
              max-lg:py-4 px-4 '><RouterLink to='/allWritters'
               class=' text-black text-xl font-semibold hover:text-[#FFB74D]'>الكتاب</RouterLink>
@@ -97,7 +99,18 @@ const isActiveLink = (routePath)=>{
           </ul>
         </div>
 
-        <Register_Sign/>
+        <!-- <Register_Sign/> -->
+       <!-- <StatuseUser/> -->
+        <div v-if="route.name ==='home' "> 
+          <Register_Sign/>
+          </div>
+        <div v-else-if="route.name ==='aboutSite' "> 
+          <Register_Sign/>
+          </div>
+
+        <div v-else>
+          <BackButton/>
+          </div>
       </div>
     </header>
      <!-- searching -->

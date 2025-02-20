@@ -24,17 +24,14 @@
           <div
             v-for="(author, index) in authors"
             :key="index"
-            class="bg-white h-[430px] p-10 rounded-xl shadow-md text-center"
-          >
-            <img :src="author.image" alt="author" class="w-36 h-3w-36 mx-auto rounded-full" />
-            <h2 class="mt-4 text-xl text-gray-800 font-semibold">{{ author.name }}</h2>
-            <p class="text-gray-700 mt-2">{{ author.description }}</p>
-            <div class="flex justify-center mt-3">
-              <span v-for="star in 5" :key="star" class="text-[#FFB74D]  px-2 text-2xl ">
-                {{ star <= author.rating ? '★' : '☆' }}
-              </span>
-            </div>
-            <button class="mt-4 px-4 py-2 w-full bg-[#FFB74D] text-gray-800 rounded-lg"><RouterLink to="/writter">تعرف على الكاتب</RouterLink></button>
+          
+          >    
+          <Card 
+          :name="author.name"
+          :description="author.description"
+          :image="author.image"
+          v-model="author.rating"
+        />        
           </div>
         </div>
       </div>
@@ -58,9 +55,15 @@
   </template>
   
   <script>
+import Card from './card.vue';
+
   export default {
+    components:{
+      Card
+    },
     data() {
       return {
+      
         currentIndex: 0,
         visibleCards:3,
         authors: [

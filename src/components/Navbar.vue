@@ -55,7 +55,7 @@ const router=useRouter()
 </script>
 
 <template>
-  <header class='flex  font-[sans-serif] w-full '>
+  <header class='flex  font-[sans-serif] w-full relative z-20 '>
       <div class='flex flex-wrap items-center justify-between gap-5 w-full shadow-md px-16 mb-7'>
         <RouterLink to="#" class=""><img src="/src/assets/اسم وشعار الموقع.png" alt="شعار" class=' w-40 ' /></RouterLink>
 
@@ -105,6 +105,9 @@ const router=useRouter()
           <Register_Sign/>
           </div>
         <div v-else-if="route.name ==='aboutSite' "> 
+          <Register_Sign/>
+          </div>
+        <div v-else-if="route.name ==='three_five' "> 
           <Register_Sign/>
           </div>
 

@@ -3,6 +3,7 @@ import axios from 'axios';
 import { onMounted, onUnmounted, reactive, ref } from 'vue';
 import { useToast } from 'vue-toastification';
 import router from '@/router';
+import Footering from '@/components/Footering.vue';
 
 const isOpentoggle = ref(false);
 // Close dropdownmenue when clicking outside
@@ -210,6 +211,7 @@ onUnmounted(() => {
         </div>
         </div>
     </div>
+    <Footering/>
   </template>
   
  

@@ -71,11 +71,14 @@
           </div>
           </div>
         </div>
-      <!-- </div> -->
+     
     </div>
+  <Footering/>
   </template>
   
   <script>
+import Footering from '@/components/Footering.vue';
+
   export default {
     data() {
       return {

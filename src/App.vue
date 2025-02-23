@@ -7,7 +7,10 @@ import WritterforReaer from './views/ProfileWritter.vue';
 </script>
 <template>
    <Navbar/>
-<RouterView/>
+<!-- <RouterView/> -->
+<keep-alive>
+  <router-view></router-view>
+</keep-alive>
  <!-- <WritterforReaer/> -->
 <!-- <Footering/> -->
 </template>

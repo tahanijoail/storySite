@@ -26,20 +26,20 @@ import { useRoute } from 'vue-router';
       });
     },
 
-    async mounted(){
-      console.log(this.storyaudio+"kkkkkkkkkkkkkkkk")
-        try {
+  //   async mounted(){
+  //     console.log(this.storyaudio+"kkkkkkkkkkkkkkkk")
+  //       try {
          
-    const response = await axios.get(`http://localhost:9000/stories/${this.storyId}`);
-    state.story=response.data;
-    console.log(state.story)
-  } catch (error) {
-    console.error("Error.....",error);
-  }finally{
-    state.isloading=false;
-  }
+  //   const response = await axios.get(`http://localhost:9000/stories/${this.storyId}`);
+  //   state.story=response.data;
+  //   console.log(state.story)
+  // } catch (error) {
+  //   console.error("Error.....",error);
+  // }finally{
+  //   state.isloading=false;
+  // }
   
-    },
+  //   },
     methods: {
       togglePlay() {
         if (this.isPlaying) {

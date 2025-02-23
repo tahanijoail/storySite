@@ -92,13 +92,13 @@ onUnmounted(() => {
     </div>
 <div
       v-if="isOpentoggleM"
-      class="absolute mt-12 left-[693px] w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
+      class="absolute mt-12 left-[700px] w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
     >
     <Unorderd/>
     </div>
 <div
       v-if="isOpentoggleE"
-      class="absolute mt-12 right-[481px] w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
+      class="absolute mt-12 md:right-[445px] w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
     >
     <Unorderd/>
     </div>

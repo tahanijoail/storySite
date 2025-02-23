@@ -3,6 +3,7 @@ import axios from 'axios';
 import { onMounted, onUnmounted, reactive, ref } from 'vue';
 import { useToast } from 'vue-toastification';
 import router from '@/router';
+import Footering from '@/components/Footering.vue';
 
 const isOpentoggle = ref(false);
 // Close dropdownmenue when clicking outside
@@ -165,8 +166,7 @@ onUnmounted(() => {
                 <!-- <span v-if="errors.category" class="text-sm text-red">{{ errors.category }}</span> -->
             </div>
 
-            <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
-
+         
             <!-- ------------------------------ -->
             <!-- Cover Image -->
             <div class="mb-12 pr-28 ">
@@ -233,6 +233,7 @@ onUnmounted(() => {
         </div>
         </div>
     </div>
+    <Footering/>
   </template>
   
  

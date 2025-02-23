@@ -29,6 +29,7 @@
         <p class="mt-2 text-lg font-bold text-[#FFB74D]"><i class="pi pi-tablet pl-2 text-[#FFB74D]"></i>تابعونا على:
           <span class="texttext-lg font-bold text-[#21A1D8]">facebook , instagram</span>
         </p>
+<Footering/>
       </section>
     </div>
     <div class="relative pt-20"><img src="/images/rb_28307 1.png" alt="" class="absolute w-[711px] bottom-0 left-0 z-20"></div>
@@ -36,6 +37,8 @@
   </template>
   
   <script>
+import Footering from '@/components/Footering.vue';
+
   export default {
     data() {
       return {

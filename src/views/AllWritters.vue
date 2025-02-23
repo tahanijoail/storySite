@@ -52,10 +52,12 @@
     </div>
     </div>
     <div class="relative pt-20"><img src="/images/rb_28307 1.png" alt="" class="absolute w-[711px] bottom-0 right-0 z-20"></div>
+  <Footering/>
   </template>
   
   <script>
-import Card from './card.vue';
+import Footering from '@/components/Footering.vue';
+import Card from './Card.vue';
 
   export default {
     components:{

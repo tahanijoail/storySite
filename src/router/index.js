@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import BrowesStories from '../views/BrowesStories.vue'
 import Three_five from '@/components/Three_five.vue'
 import Six_Eight from '@/components/Six_Eight.vue'
 import Nine_eleven from '@/components/Nine_eleven.vue'
@@ -19,7 +18,6 @@ import UpdatePassword from '@/views/UpdatePassword.vue'
 import UpdatePasswordUser from '@/views/UpdatePasswordUser.vue'
 import FavoriteStories from '@/views/FavoriteStories.vue'
 import ReviewStory from '@/components/ReviewStory.vue'
-import WritterforReaer from '@/views/ProfileWritter.vue'
 import EditeProfileWritter from '@/views/EditeProfileWritter.vue'
 import ProfileWritter from '@/views/ProfileWritter.vue'
 
@@ -62,11 +60,7 @@ const router = createRouter({
       component: CreateAccountAsReader,
 
     },
-    {
-      path: '/browesStories',
-      name: 'browesStories',
-      component: BrowesStories,
-    },
+  
     {
       path: '/aboutSite',
       name: 'aboutSite',

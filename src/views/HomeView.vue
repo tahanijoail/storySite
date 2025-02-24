@@ -14,7 +14,7 @@ import Searching from '@/components/Searching.vue';
   <Hero/>
 </main>
 <ReadableStories/>
-<Footering/>
+
 </template>
 <style scoped>
 

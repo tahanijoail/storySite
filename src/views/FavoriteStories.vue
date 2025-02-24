@@ -98,7 +98,7 @@ if(confirm){
 </div>
     </div>
     <div class="relative pt-[400px] "><img src="/images/rb_28307 1.png" alt="" class="absolute w-[711px] bottom-0 right-0 z-20"></div>
-    <Footering/>
+ 
 </template>
 <style scoped>
 .bgPattern{

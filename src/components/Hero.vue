@@ -20,9 +20,10 @@ import FancyButtons from './FancyButtons.vue';
                 "هنا حيث تبدأ المغامرات الممتعة وتنطلق أحلام الأطفال في عوالم مليئة بالإبداع والتعلم.
                 اكتشف أجمل القصص التي تناسب خيال طفلك"
               </p>
+              <RouterLink to="/three_five" class=" cursor-pointer">
               <FancyButtons class="py-3">
                 ابدأ الآن واكتشف عالماً مليئا بالإبداع
-              </FancyButtons>
+              </FancyButtons></RouterLink>
             </div>
           
         </div>

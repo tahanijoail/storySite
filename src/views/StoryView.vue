@@ -71,7 +71,6 @@ const state =reactive({
     </div>
 <div v-else class="text-center text-gray-500 py-6"><PulseLoader/></div>
 <Comments/>
-<Footering/>
 </template>
 <style scoped>
 .storyGradient{

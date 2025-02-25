@@ -5,7 +5,13 @@ import FancyButtons from './FancyButtons.vue';
 </script>
 <template>
 
-<section class="getStarted bg-[#FFB74D] py-24 my-6 relative flex justify-center">
+<!-- <section class="getStarted bg-[#FFB74D] py-24 my-6 relative flex justify-center"> -->
+ 
+<section class="relative">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1509" height="738" viewBox="0 0 1509 738" fill="none" class=" absolute -z-40 w-full">
+<path d="M1493 0H16C7.16344 0 0 7.16344 0 16V619.063C0 622.777 1.15381 626.219 3.72183 628.903C34.0965 660.645 253.713 860.094 784 624.809C1199.9 440.276 1393.73 523.156 1468.95 582.811C1481.7 592.922 1509 582.722 1509 566.45V16C1509 7.16344 1501.84 0 1493 0Z" fill="#FFB74D"/>
+</svg>
+  <div class="getStarted  py-24 my-6 relative flex justify-center ">
     <div class=" container mx-auto flex flex-col-reverse md:flex-row items-center   md:w-full ">
       <div class=" md:w-[40%] pr-16 py-52 flex justify-center z-10 relative">
           <div class="bg-transparent rounded-full absolute -bottom-32">
@@ -27,8 +33,10 @@ import FancyButtons from './FancyButtons.vue';
             </div>
           
         </div>
-        <div class="curve"></div>
+        <!-- <div class="curve"></div> -->
+      </div>
     </section>
+    <!-- </section> -->
 </template>
 <style scoped>
 

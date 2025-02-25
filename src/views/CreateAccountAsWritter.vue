@@ -18,7 +18,7 @@
         <div class="mt-6 space-y-4">
           <div>
             <label class="block text-gray-700">ادخل اسمك</label>
-            <input type="text" class="w-full mt-1 p-3 border rounded-lg bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="الاسم" />
+            <input type="text" class="w-full mt-1 p-3 border rounded-lg bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="ادخل اسمك" />
           </div>
           <div>
             <label class="block text-gray-700">ادخل البريد الإلكتروني</label>

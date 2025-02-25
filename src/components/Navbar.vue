@@ -46,6 +46,7 @@ toggleClose.addEventListener('click', handleClick);
 })
 // this functin for make hover when i click on the href on the navbar
 const route=useRoute();
+// لتكون التبويبة ملونة في كل مرة
 const isActiveLink = (routePath)=>{
   console.log("hjdhjshdjhdjhjsd"+route.name)
   return route.path===routePath;
@@ -108,6 +109,9 @@ const router=useRouter()
           <Register_Sign/>
           </div>
         <div v-else-if="route.name ==='three_five' "> 
+          <Register_Sign/>
+          </div>
+        <div v-else-if="route.name ==='allWritters' "> 
           <Register_Sign/>
           </div>
 

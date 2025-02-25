@@ -3,27 +3,18 @@ import { RouterView, useRoute } from 'vue-router';
 import Navbar from './components/Navbar.vue';
 import Footering from './components/Footering.vue';
 
-const route=useRoute()
+const route = useRoute();
+const hiddenFooterRoutes = [
+  "loginForm",
+  "createAccountAsWritter",
+  "updatePassword",
+  "updatePasswordUser",
+  "createAccountAsReader",
+];
 </script>
+
 <template>
-   <Navbar/>
-<RouterView/>
-<div v-if="route.name==='loginForm'" class=" hidden">
-  <Footering/>
-</div>
-<div v-else-if="route.name==='createAccountAsWritter'" class=" hidden">
-  <Footering/>
-</div>
-<div v-else-if="route.name==='updatePassword'" class=" hidden">
-  <Footering/>
-</div>
-<div v-else-if="route.name==='updatePasswordUser'" class=" hidden">
-  <Footering/>
-</div>
-<div v-else-if="route.name==='createAccountAsReader'" class=" hidden">
-  <Footering/>
-</div>
-<div v-else> <Footering/></div>
+  <Navbar />
+  <RouterView />
+  <Footering v-if="!hiddenFooterRoutes.includes(route.name)" />
 </template>
-<style scoped>
-</style>
